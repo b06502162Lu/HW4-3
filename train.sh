@@ -5,13 +5,13 @@ python  ./examples/run_squad.py \
 	--model_name_or_path bert-base-chinese \
 	--train_file Data/hw4-3_train.json \
 	--predict_file Data/hw4-3_dev.json \
-	--learning_rate 1e-4 \
+	--learning_rate 1e-5 \
 	--num_train_epochs 5\
 	--max_seq_length 384 \
 	--per_gpu_train_batch_size 10 \
 	--per_gpu_eval_batch_size 100 \
 	--output_dir ./output/MY_MODEL \
-	--warmup_steps 10 \
+	--warmup_steps 20 \
 	--gradient_accumulation_steps 1 \
 	--evaluate_during_training \
         --logging_steps 2500 \
